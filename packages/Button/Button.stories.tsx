@@ -6,13 +6,7 @@ export default {
 	component: Button,
 } as ComponentMeta<typeof Button>;
 
-export const Primary: ComponentStory<typeof Button> = () => (
-	<Button
-		// disabled
-		onClick={e => {
-			console.log(e);
-		}}
-	>
-		123
-	</Button>
-);
+const Template: ComponentStory<typeof Button> = args => <Button {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {};

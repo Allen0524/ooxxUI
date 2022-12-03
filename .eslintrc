@@ -12,7 +12,13 @@
 		"project": "./tsconfig.json"
 	},
 	"parser": "@typescript-eslint/parser",
-	"plugins": ["react", "@typescript-eslint", "testing-library", "jsx-a11y"],
+	"plugins": [
+		"react",
+		"react-hooks",
+		"@typescript-eslint",
+		"testing-library",
+		"jsx-a11y"
+	],
 	"extends": [
 		"eslint:recommended",
 		"eslint-config-prettier",
