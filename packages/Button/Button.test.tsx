@@ -1,12 +1,19 @@
 import {render, screen} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 
 import {Button} from './Button';
 
 describe('Button', () => {
-	it('render correctly', () => {
-		render(<Button />);
+	it('renders correctly', () => {
+		render(<Button>button test</Button>);
 
-		expect(screen.getByText('123')).toBeInTheDocument();
+		expect(screen.getByText('button test')).toBeInTheDocument();
+	});
+
+	it('should disabled', () => {
+		render(<Button disabled={true}>button test</Button>);
+
+		expect(screen.getByRole('button')).toBeDisabled();
 	});
 });
