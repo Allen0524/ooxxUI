@@ -67,7 +67,7 @@
 	},
 	"dependencies": {},
 	"lint-staged": {
-		"packages/**/*.{ts,tsx}": [
+		"*.{ts,tsx}": [
 			"eslint",
 			"prettier --write"
 		]
