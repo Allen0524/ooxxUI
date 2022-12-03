@@ -6,4 +6,6 @@ coverage
 
 .storybook
 
+.husky
+
 styles
