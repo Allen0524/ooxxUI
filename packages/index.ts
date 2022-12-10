@@ -1,1 +1,1 @@
-export * from './Button/index';
+export * from './Switch/index';
