@@ -3,7 +3,7 @@ interface SwitchProps {
 	id?: string;
 	checked?: boolean;
 	className?: string;
-	onChange?: (checked: boolean) => void;
+	onChange?: (value: boolean) => void;
 	children?: ReactNode;
 }
 

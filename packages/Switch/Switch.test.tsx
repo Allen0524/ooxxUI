@@ -6,14 +6,16 @@ import {Switch} from './Switch';
 
 describe('Button', () => {
 	it('renders correctly', () => {
-		render(<Switch>button test</Switch>);
+		render(<Switch />);
 
-		expect(screen.getByText('button test')).toBeInTheDocument();
+		expect(screen.getByRole('button')).toBeInTheDocument();
 	});
 
-	it('should disabled', () => {
-		render(<Switch disabled={true}>button test</Switch>);
-
-		expect(screen.getByRole('button')).toBeDisabled();
+	it('should call the onChange listener when choosing new value', async () => {
+		const handleChange = jest.fn();
+		render(<Switch checked={false} onChange={handleChange} />);
+		const switchElm = screen.getByRole('button');
+		await userEvent.click(switchElm);
+		expect(handleChange).toBeCalledWith(true);
 	});
 });
