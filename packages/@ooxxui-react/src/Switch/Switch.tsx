@@ -1,4 +1,5 @@
 import {ReactNode} from 'react';
+
 interface SwitchProps {
 	id?: string;
 	checked?: boolean;
@@ -22,6 +23,8 @@ export function Switch({
 	return (
 		<button
 			id={id}
+			role="switch"
+			aria-checked={checked}
 			className={className}
 			onClick={handleOnClick}
 			{...restProps}

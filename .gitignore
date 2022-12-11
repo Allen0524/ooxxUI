@@ -1,10 +1,13 @@
 node_modules
+packages/*/node_modules
 
 build
+packages/*/build
 
 coverage
+packages/*/coverage
 
-.storybook
+packages/*/.storybook
 
 .husky
 

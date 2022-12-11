@@ -1,0 +1,39 @@
+{
+	"name": "ooxxUI",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"author": "Allen Li",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"build": "rollup --config rollup.config.js",
+		"lint": "eslint --ignore-path .gitignore --ext .ts,.tsx .",
+		"test": "jest --watch",
+		"check-types": "tsc",
+		"format": "yarn prettier --write .",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"devDependencies": {
+		"@rollup/plugin-babel": "^6.0.3",
+		"@rollup/plugin-node-resolve": "^15.0.1",
+		"@rollup/plugin-typescript": "^10.0.1",
+		"@storybook/addon-actions": "^6.5.13",
+		"@storybook/addon-essentials": "^6.5.13",
+		"@storybook/addon-interactions": "^6.5.13",
+		"@storybook/addon-links": "^6.5.13",
+		"@storybook/builder-webpack4": "^6.5.13",
+		"@storybook/manager-webpack4": "^6.5.13",
+		"@storybook/react": "^6.5.13",
+		"@storybook/testing-library": "^0.0.13",
+		"acorn-jsx": "^5.3.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"rollup": "^3.5.0",
+		"ts-node": "^10.9.1"
+	},
+	"peerDependencies": {
+		"react": ">= 17.0.2",
+		"react-dom": ">= 17.0.2"
+	}
+}
