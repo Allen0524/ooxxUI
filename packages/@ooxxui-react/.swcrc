@@ -3,7 +3,7 @@
 		"parser": {
 			"syntax": "typescript",
 			"tsx": true,
-			"decorators": false,
+			"decorators": true,
 			"dynamicImport": true
 		},
 		"transform": {
@@ -27,5 +27,6 @@
 		"noInterop": false
 	},
 	"sourceMaps": true,
-	"minify": false
+	"minify": false,
+	"exclude": [".test.tsx$", ".stories.tsx$"]
 }
