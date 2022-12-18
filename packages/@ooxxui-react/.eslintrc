@@ -8,22 +8,22 @@
 		"sourceType": "module",
 		"ecmaFeatures": {
 			"jsx": true
-		},
-		"project": "./tsconfig.json"
+		}
 	},
 	"parser": "@typescript-eslint/parser",
 	"plugins": [
-		"react",
-		"react-hooks",
-		"@typescript-eslint",
+		"jsx-a11y",
 		"testing-library",
-		"jsx-a11y"
+		"@typescript-eslint",
+		"react",
+		"react-hooks"
 	],
 	"extends": [
 		"eslint:recommended",
 		"eslint-config-prettier",
 		"plugin:jsx-a11y/recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
-		"plugin:@typescript-eslint/recommended"
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended"
 	]
 }

@@ -1,14 +1,15 @@
 node_modules
 packages/*/node_modules
 
-build
 packages/*/build
 
-coverage
 packages/*/coverage
 
 packages/*/.storybook
 
-.husky
+packages/*/.next
+packages/*/next-env.d.ts
 
-styles
+packages/*/.vscode
+
+.husky

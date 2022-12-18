@@ -192,4 +192,7 @@ export default {
 
 	// Whether to use watchman for file crawling
 	// watchman: true,
+	transform: {
+		'^.+\\.(t|j)sx?$': ['@swc/jest'],
+	},
 };

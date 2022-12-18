@@ -1,0 +1,14 @@
+{
+	"plugins": ["react", "react-hooks"],
+	"extends": [
+		"eslint:recommended",
+		"prettier",
+		"next",
+		"plugin:@next/next/recommended"
+	],
+	"settings": {
+		"next": {
+			"rootDir": "../@ooxxui.com/"
+		}
+	}
+}
