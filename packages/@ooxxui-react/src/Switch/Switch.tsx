@@ -9,7 +9,7 @@ interface SwitchProps {
 }
 
 export function Switch({
-	id = '',
+	id = 'ooxxui',
 	children,
 	checked,
 	className,

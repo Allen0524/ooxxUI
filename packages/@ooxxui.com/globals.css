@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--navigation-height: 4rem;
+	}
+
+	html {
+		@apply bg-background text-base;
+		font-size: 62.5%;
+	}
+
+	*::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	*::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		border-radius: 14px;
+		background-color: transparent;
+	}
+}
+
+@layer components {
+	.scrollbar {
+		@apply overflow-y-scroll;
+	}
+
+	.scrollbar:hover::-webkit-scrollbar-thumb {
+		background-color: rgba(128, 128, 128, 0.3);
+	}
+}

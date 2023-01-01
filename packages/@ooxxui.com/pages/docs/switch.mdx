@@ -1,0 +1,31 @@
+import {DocsLayout} from '@components/DocsLayout';
+import {Switch} from '@ooxxui/react';
+
+# Switch
+
+A control that allows the user to toggle between checked and not checked.
+
+## Basic example
+
+```js
+function Toggle() {
+	return <Switch />;
+}
+```
+
+<Switch
+	onClick={() => {
+		console.log('click');
+	}}
+>
+	Toggle
+</Switch>
+
+## Component API
+
+| Prop       | Type    |
+| ---------- | ------- |
+| `checked`  | boolean |
+| `disabled` | boolean |
+
+export default ({children}) => <DocsLayout>{children}</DocsLayout>;
